@@ -11,8 +11,8 @@ import com.fachrudin.framework.core.BaseViewHolder
 import com.fachrudin.framework.core.ViewDataBindingOwner
 import com.fachrudin.base.databinding.ItemNewsBinding
 import com.fachrudin.base.entities.NewsItem
-import com.fachrudin.base.util.DateHelper
 import com.fachrudin.framework.core.GlideApp
+import com.fachrudin.framework.util.DateHelper
 
 /**
  * @author achmad.fachrudin
