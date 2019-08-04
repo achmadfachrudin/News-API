@@ -2,8 +2,8 @@ package com.fachrudin.base.presentation.splashscreen
 
 import android.os.Bundle
 import com.fachrudin.base.R
-import com.fachrudin.base.core.BaseActivity
-import com.fachrudin.base.core.ViewDataBindingOwner
+import com.fachrudin.framework.core.BaseActivity
+import com.fachrudin.framework.core.ViewDataBindingOwner
 import com.fachrudin.base.databinding.ActivitySplashScreenBinding
 import com.fachrudin.base.presentation.main.MainPageActivity
 import kotlinx.coroutines.Dispatchers

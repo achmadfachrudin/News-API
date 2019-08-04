@@ -4,8 +4,8 @@ import android.content.Context
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
 import com.fachrudin.base.BuildConfig
-import com.fachrudin.base.core.BaseViewModel
-import com.fachrudin.base.core.NetworkState
+import com.fachrudin.framework.core.BaseViewModel
+import com.fachrudin.framework.core.NetworkState
 import com.fachrudin.base.entities.News
 import com.fachrudin.base.network.RetrofitFactory
 import kotlinx.coroutines.Dispatchers

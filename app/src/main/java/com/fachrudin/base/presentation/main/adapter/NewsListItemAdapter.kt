@@ -4,14 +4,15 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.fachrudin.base.R
-import com.fachrudin.base.core.BaseRecycleViewAdapter
-import com.fachrudin.base.core.BaseViewHolder
-import com.fachrudin.base.core.GlideApp
-import com.fachrudin.base.core.ViewDataBindingOwner
+import com.fachrudin.framework.core.BaseRecycleViewAdapter
+import com.fachrudin.framework.core.BaseViewHolder
+import com.fachrudin.framework.core.ViewDataBindingOwner
 import com.fachrudin.base.databinding.ItemNewsBinding
 import com.fachrudin.base.entities.NewsItem
 import com.fachrudin.base.util.DateHelper
+import com.fachrudin.framework.core.GlideApp
 
 /**
  * @author achmad.fachrudin
@@ -64,5 +65,8 @@ class NewsListItemAdapter : BaseRecycleViewAdapter<NewsItem>() {
             }
         }
 
+        override fun onClickItem(view: View) {
+            Toast.makeText(context, "Test Click", Toast.LENGTH_LONG).show()
+        }
     }
 }

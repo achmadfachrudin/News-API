@@ -1,6 +1,6 @@
 package com.fachrudin.base.presentation.splashscreen
 
-import com.fachrudin.base.core.BaseView
+import com.fachrudin.framework.core.BaseView
 
 /**
  * @author achmad.fachrudin

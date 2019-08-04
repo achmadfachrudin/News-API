@@ -10,11 +10,11 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fachrudin.base.R
-import com.fachrudin.base.core.BaseActivity
-import com.fachrudin.base.core.EndlessRecyclerViewScrollListener
-import com.fachrudin.base.core.NetworkState
-import com.fachrudin.base.core.ViewDataBindingOwner
-import com.fachrudin.base.core.widget.LoadingView
+import com.fachrudin.framework.core.BaseActivity
+import com.fachrudin.framework.core.EndlessRecyclerViewScrollListener
+import com.fachrudin.framework.core.NetworkState
+import com.fachrudin.framework.core.ViewDataBindingOwner
+import com.fachrudin.framework.widget.LoadingView
 import com.fachrudin.base.databinding.ActivityMainPageBinding
 import com.fachrudin.base.presentation.main.adapter.NewsListItemAdapter
 import kotlinx.coroutines.Dispatchers
@@ -46,13 +46,11 @@ class MainPageActivity : BaseActivity(),
 
     private lateinit var listAdapter: NewsListItemAdapter
 
-    override var retryListener: LoadingView.OnRetryListener
-        get() = object : LoadingView.OnRetryListener {
+    override var retryListener: LoadingView.OnRetryListener = object : LoadingView.OnRetryListener {
             override fun onRetry() {
                 viewModel.getNewsFromApi(true)
             }
         }
-        set(value) {}
 
     private var doubleBackPressed = false
 

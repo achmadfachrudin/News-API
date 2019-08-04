@@ -49,7 +49,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:visibility="visible"/>
 
-        <com.fachrudin.base.core.widget.LoadingView
+        <com.fachrudin.framework.widget.LoadingView
                 android:id="@+id/loading_view"
                 style="@style/RegularFont"
                 android:layout_width="match_parent"

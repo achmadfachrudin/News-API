@@ -1,7 +1,7 @@
 package com.fachrudin.base.presentation.main.adapter
 
 import androidx.databinding.ObservableField
-import com.fachrudin.base.core.BaseViewModel
+import com.fachrudin.framework.core.BaseViewModel
 
 /**
  * @author achmad.fachrudin
